@@ -1,4 +1,3 @@
-# Coursera - Data Science Specialization (JHU)
 # Course 3: Getting and Cleaning Data Week 4 Project
 
 # Introduction: 
