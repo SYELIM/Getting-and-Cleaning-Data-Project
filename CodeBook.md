@@ -18,26 +18,26 @@
 
 2.	Column names were assigned to datasets read:
     - For `X_train.txt` and `X_test.txt`, originally, the columns were named V1,…,Vn. These were renamed by the second columns of -`features.txt`:
--`tBodyAcc-XYZ`
--`tGravityAcc-XYZ`
--`tBodyAccJerk-XYZ`
--`tBodyGyro-XYZ`
--`tBodyGyroJerk-XYZ`
--`tBodyAccMag`
--`tGravityAccMag`
--`tBodyAccJerkMag`
--`tBodyGyroMag`
--`tBodyGyroJerkMag`
--`fBodyAcc-XYZ`
--`fBodyAccJerk-XYZ`
--`fBodyGyro-XYZ`
--`fBodyAccMag`
--`fBodyAccJerkMag`
--`fBodyGyroMag`
--`fBodyGyroJerkMag`
-      - For `y_train.txt` and `y_test.txt`, column name was assigned as `ActivityID`
-      - For `subject_train.txt` and `subject_test.txt`, column name was assigned as `SubjectID`
-      - For `activity_label.txt`, the first column was named as `ActivityID`, second one as `Activity_label`.
+- `tBodyAcc-XYZ`
+- `tGravityAcc-XYZ`
+- `tBodyAccJerk-XYZ`
+- `tBodyGyro-XYZ`
+- `tBodyGyroJerk-XYZ`
+- `tBodyAccMag`
+- `tGravityAccMag`
+- `tBodyAccJerkMag`
+- `tBodyGyroMag`
+- `tBodyGyroJerkMag`
+- `fBodyAcc-XYZ`
+- `fBodyAccJerk-XYZ`
+- `fBodyGyro-XYZ`
+- `fBodyAccMag`
+- `fBodyAccJerkMag`
+- `fBodyGyroMag`
+- `fBodyGyroJerkMag`
+    - For `y_train.txt` and `y_test.txt`, column name was assigned as `ActivityID`
+    - For `subject_train.txt` and `subject_test.txt`, column name was assigned as `SubjectID`
+    - For `activity_label.txt`, the first column was named as `ActivityID`, second one as `Activity_label`.
     
 3. Using `cbind()` and `rbind()` merged all datasets.
 
