@@ -13,43 +13,43 @@
 >- An identifier of the subject who carried out the experiment.
 (source:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-##Steps:
+## Steps:
 1.	Datasets required for this project were read using `read.table()` function. 
 
 2.	Column names were assigned to datasets read:
-    a. For `X_train.txt` and `X_test.txt`, originally, the columns were named V1,…,Vn. These were renamed by the second columns of `features.txt`:
-`tBodyAcc-XYZ`
-`tGravityAcc-XYZ`
-`tBodyAccJerk-XYZ`
-`tBodyGyro-XYZ`
-`tBodyGyroJerk-XYZ`
-`tBodyAccMag`
-`tGravityAccMag`
-`tBodyAccJerkMag`
-`tBodyGyroMag`
-`tBodyGyroJerkMag`
-`fBodyAcc-XYZ`
-`fBodyAccJerk-XYZ`
-`fBodyGyro-XYZ`
-`fBodyAccMag`
-`fBodyAccJerkMag`
-`fBodyGyroMag`
-`fBodyGyroJerkMag`
-    b. For `y_train.txt` and `y_test.txt`, column name was assigned as `ActivityID`
-    c. For `subject_train.txt` and `subject_test.txt`, column name was assigned as `SubjectID`
-    d. For `activity_label.txt`, the first column was named as `ActivityID`, second one as `Activity_label`.
+    - For `X_train.txt` and `X_test.txt`, originally, the columns were named V1,…,Vn. These were renamed by the second columns of -`features.txt`:
+-`tBodyAcc-XYZ`
+-`tGravityAcc-XYZ`
+-`tBodyAccJerk-XYZ`
+-`tBodyGyro-XYZ`
+-`tBodyGyroJerk-XYZ`
+-`tBodyAccMag`
+-`tGravityAccMag`
+-`tBodyAccJerkMag`
+-`tBodyGyroMag`
+-`tBodyGyroJerkMag`
+-`fBodyAcc-XYZ`
+-`fBodyAccJerk-XYZ`
+-`fBodyGyro-XYZ`
+-`fBodyAccMag`
+-`fBodyAccJerkMag`
+-`fBodyGyroMag`
+-`fBodyGyroJerkMag`
+      - For `y_train.txt` and `y_test.txt`, column name was assigned as `ActivityID`
+      - For `subject_train.txt` and `subject_test.txt`, column name was assigned as `SubjectID`
+      - For `activity_label.txt`, the first column was named as `ActivityID`, second one as `Activity_label`.
     
 3. Using `cbind()` and `rbind()` merged all datasets.
 
 4. Selection of `ActivityID`, `SubjectID`, `mean` and `std` was done using `grepl()` function. This was returned as logical vector.
 
 5. After the selection of necessary data, the specific number of activity performance was replaced by its detailed description: 
-`1` = `WALKING`
-`2` = `WALKING_UPSTAIRS`
-`3` = `WALKING_DOWNSTAIRS`
-`4` = `SITTING`
-`5` = `STANDING`
-`6` = `LAYING`
+- `1` = `WALKING`
+- `2` = `WALKING_UPSTAIRS`
+- `3` = `WALKING_DOWNSTAIRS`
+- `4` = `SITTING`
+- `5` = `STANDING`
+- `6` = `LAYING`
 
 6.	Descriptive activity names were edited using `gsub()`.
 
