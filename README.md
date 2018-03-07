@@ -5,6 +5,8 @@ The purpose of this project is to get and organize the downloaded datasets from 
 In this study, study participants were carrying Samsung Galaxy S II smartphone on their waist, and were told to perform simple activities: walking, walking upstairs, walking downstairs, sitting, standing, laying. 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were collected using accelerometer and gyroscope that were embedded in Galaxy S II. 
 Check the following link for further details: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. 
 
+To download the data for this project, click [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
+
 # Components of the project:
 -	README.md: Brief explanation of the study, and components of the project
 -	CodeBook.md: Explanation of variables, data, transformation, and any other processes that have been done to make the final tidy data. 
